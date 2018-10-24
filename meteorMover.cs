@@ -12,7 +12,6 @@ public class meteorMover : MonoBehaviour {
 	void Start () {
 
 		rb2d = GetComponent<Rigidbody2D> ();
-		//GameObject.FindGameObjectsWithTag ("Player");
 		GameObject playermove = GameObject.FindGameObjectWithTag ("Player");
 		if (playermove != null) {
 			player = playermove.transform;
