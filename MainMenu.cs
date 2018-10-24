@@ -45,8 +45,7 @@ public class MainMenu : MonoBehaviour {
 		
 	public void ShowLeaderBoard () {
 
-		((PlayGamesPlatform)Social.Active).ShowLeaderboardUI ("CgkIk43W2IsIEAIQAQ");
-		//Social.ShowLeaderboardUI ("CgkIk43W2IsIEAIQAQ");
+		((PlayGamesPlatform)Social.Active).ShowLeaderboardUI ("");
 
 	}
 
@@ -59,7 +58,6 @@ public class MainMenu : MonoBehaviour {
 			HightestscoreValue.text = "" + data.HigherScore;
 			HigherScoreN = data.HigherScore;
 			TotalScoreforcount = data.TotalScore;
-			//HighestScore.text = "" + data.HigherScore;
 			pS1 = data.S1;
 			pS2 = data.S2;
 			pS3 = data.S3;
@@ -165,7 +163,7 @@ public class MainMenu : MonoBehaviour {
 			data.S5 = pS5;
 			data.TotalScore = TotalScoreforcount - 10000;
 			data.HigherScore = HigherScoreN;
-			Social.ReportProgress("CgkIk43W2IsIEAIQAw", 100.0f, (bool success) => {
+			Social.ReportProgress("", 100.0f, (bool success) => {
 				// handle success or failure
 			});
 		}else if (ship == 4) {
@@ -182,7 +180,7 @@ public class MainMenu : MonoBehaviour {
 			data.S5 = 1;
 			data.TotalScore = TotalScoreforcount - 50000;
 			data.HigherScore = HigherScoreN;
-			Social.ReportProgress("CgkIk43W2IsIEAIQBA", 100.0f, (bool success) => {
+			Social.ReportProgress("", 100.0f, (bool success) => {
 				// handle success or failure
 			});
 		}
