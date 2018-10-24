@@ -32,10 +32,5 @@ public class barScript : MonoBehaviour {
 			}
 
 		}
-		/*
-		PlayerControls Player = player.GetComponent<PlayerControls> ();
-		int playerScore = Player.score;
-		scoreText.text = "" + playerScore; 
-		*/
 	}
 }
