@@ -23,28 +23,6 @@ public class PlayerControls : MonoBehaviour {
 	public Sprite[] playerSprites;
 	private GameObject[] Enemy;
 
-	//private GameObject[] Meteor;
-	/*
-	void shipSet (){
-		
-		DamagebyInpact Health = GetComponent<DamagebyInpact> ();
-		PlayerControls playerSpeed = GetComponent<PlayerControls> ();
-
-		if (spriteNumber >= 0 && spriteNumber <= 3) {
-			playerSpeed.speed = 3;
-			Health.health = 100;
-			fullHealth = 100;
-		} else if (spriteNumber >= 4 && spriteNumber <= 7) {
-			playerSpeed.speed = 6;
-			Health.health = 150;
-			fullHealth = 150;
-		} else if (spriteNumber >= 8 && spriteNumber <= 11) {
-			playerSpeed.speed = 4;
-			Health.health = 250;
-			fullHealth = 250;
-		}
-
-	}*/
 
 	void Start () {
 		
