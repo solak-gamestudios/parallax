@@ -43,30 +43,12 @@ public class saveGame : MonoBehaviour {
 			data.HigherScore = globalValues.globalScoreingame;
 			Check = false;
 		}
-		// post score 12345 to leaderboard ID "Cfji293fjsie_QA")
+		// post score 12345 to leaderboard ID "")
 		if (Check){
-			Social.ReportScore(data.HigherScore, "CgkIk43W2IsIEAIQAQ", (bool success) => {
+			Social.ReportScore(data.HigherScore, "", (bool success) => {
 			});
 		}
-		/*PlayGamesPlatform.Instance.LoadScores (
-			"CgkIk43W2IsIEAIQAQ",
-			LeaderboardStart.PlayerCentered,
-			1,
-			LeaderboardCollection.Public,
-			LeaderboardTimeSpan.AllTime,
-			(LeaderboardScoreData ldata) => {
-				//Debug.Log (ldata.Valid);
-				//Debug.Log (ldata.Id);
-				//Debug.Log (ldata.PlayerScore);
-				//Debug.Log (ldata.PlayerScore.userID);
-				//Debug.Log (ldata.PlayerScore.formattedValue);
-				GPSData = ldata.PlayerScore.formattedValue;
-			});
-		int intGPSData = Int32.Parse(GPSData);
-		Debug.Log ("Save: " + intGPSData);
-		if (intGPSData > data.HigherScore) {
-			data.HigherScore = intGPSData;
-		}*/
+		
 		data.S1 = pS1;
 		data.S2 = pS2;
 		data.S3 = pS3;
