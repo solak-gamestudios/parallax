@@ -28,11 +28,10 @@ public class followPlayer : MonoBehaviour {
 
 			float zAngle = Mathf.Atan2 (turn.y, turn.x) * Mathf.Rad2Deg - 90;
 			Quaternion desiredRot = Quaternion.Euler (0, 0, zAngle);
-			transform.rotation = desiredRot;//Quaternion.RotateTowards (transform.rotation, desiredRot, rotSpeed * Time.deltaTime);
+			transform.rotation = desiredRot;
 			//
 		}
 		//Player Move
-		//rb2d.AddForce (transform.up * speed);
 		rb2d.velocity = transform.up * speed;
 
 
