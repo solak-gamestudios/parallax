@@ -24,7 +24,7 @@ public class newHighestscore : MonoBehaviour {
 		saveFile.Close ();
 
 		if (data.HigherScore >= 0) {
-			Social.ReportProgress("CgkIk43W2IsIEAIQAg", 100.0f, (bool success) => {
+			Social.ReportProgress("", 100.0f, (bool success) => {
 				// handle success or failure
 			});
 		}
@@ -39,19 +39,19 @@ public class newHighestscore : MonoBehaviour {
 			HighScoretext.text = "" + globalValues.globalScoreingame;
 			HighScore.gameObject.SetActive (true);
 
-			// post score 12345 to leaderboard ID "Cfji293fjsie_QA")
-			Social.ReportScore(globalValues.globalScoreingame, "CgkIk43W2IsIEAIQAQ", (bool success) => {
+			// post score 12345 to leaderboard ID "")
+			Social.ReportScore(globalValues.globalScoreingame, "", (bool success) => {
 				
 			});
 				// handle success or failure
 
 			if (globalValues.globalScoreingame >= 1000) {
-				Social.ReportProgress("CgkIk43W2IsIEAIQBQ", 100.0f, (bool success) => {
+				Social.ReportProgress("", 100.0f, (bool success) => {
 					// handle success or failure
 				});
 			}
 			if (globalValues.globalScoreingame >= 10000) {
-				Social.ReportProgress("CgkIk43W2IsIEAIQBg", 100.0f, (bool success) => {
+				Social.ReportProgress("", 100.0f, (bool success) => {
 					// handle success or failure
 				});
 			}
